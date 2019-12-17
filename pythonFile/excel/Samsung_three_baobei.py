@@ -6,6 +6,7 @@ import datetime
 import time
 
 from openpyxl import load_workbook,Workbook
+'''
 root_path = r"E:\work\samsung\W46周报\异常"
 our_file = os.path.join(
     root_path, "【W46】导购员异常和门店异常情况-CBI_2019_1118_1120.xlsx")
@@ -245,3 +246,4 @@ ligangbaobei()
 ligangxinxi()
 teshushijian()
 
+'''
