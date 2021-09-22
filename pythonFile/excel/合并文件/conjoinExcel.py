@@ -66,7 +66,7 @@ def merge_xlsx(path, filenames, sheet_num, output_filename):
 
     # 合并数据
     # print(contentList)
-    df1 = pd.concat(contentList,)
+    df1 = pd.concat(contentList,sort= False)
 
     # 写入excel文件
     output_path = path + "\\" + 'output'
@@ -79,7 +79,7 @@ def merge_xlsx(path, filenames, sheet_num, output_filename):
     print("merge success")
 
 
-path = r'E:\work\tpp\test'
+path = r'F:\oldComputer\work\2021年\09月\W38\test'
 filenames = file_name(path)
 print(filenames)
 merge_xlsx(path, filenames, 0, "合并文件")  # 合并文件中第一个表的数据，输出到 output中
