@@ -1,12 +1,12 @@
 import os
-import openpyxl
+import openpyxl 
 import xlwings as xw
 from openpyxl.utils import get_column_letter, column_index_from_string
 
-root_path = r"C:\Users\16930\Desktop"
-aim_path = r"C:\Users\16930\Desktop\新建文件夹"
-file_name = r"最新导购员照片表_李波_pic.xlsx"
-split_by = "省"
+root_path = r"D:\work\分表"
+aim_path = r"D:\work\分表\out"
+file_name = r"W44抽样名单(1).xlsx"
+split_by = "执行人"
 file_path = os.path.join(root_path, file_name)
 save_path =  os.path.join(aim_path, file_name)
 

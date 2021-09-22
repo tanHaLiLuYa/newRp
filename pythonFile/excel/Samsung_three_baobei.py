@@ -7,16 +7,16 @@ import time
 
 from openpyxl import load_workbook,Workbook
 
-root_path = r"E:\work\samsung\W46周报\异常"
+root_path = r"D:\work\samsung\W19周报\异常"
 our_file = os.path.join(
-    root_path, "【W46】导购员异常和门店异常情况-CBI_2019_1118_1120.xlsx")
+    root_path, "【W19】导购员异常和门店异常情况_CBIC_0513_1557.xlsx")
 our_back_file = our_file.replace(".xlsx","_backup.xlsx")
 sx_D = os.path.join(root_path, "离岗报备记录导出-D1118.xlsx")
 sx_A = os.path.join(root_path, "离岗信息-A1118.xlsx")
 sx_F = os.path.join(root_path, "全国特殊事件数据-F1118.xlsx")
-sx_P = os.path.join(root_path,"W46导购员事后排班表_20191118.xlsx")
-id_our_col = "H"
-name_our_col = "I"
+sx_P = os.path.join(root_path,"导购员排班表W19-5.12.xlsx")
+id_our_col = "I"
+name_our_col = "J"
 date_our_col = "K"
 time_in_col = "L"
 time_out_col = "M"
@@ -56,13 +56,13 @@ def shihouxiugai(our_file=our_file,sxfile=sx_P):
     ws_our["AL1"].value = "上班时间"
     ws_our["AM1"].value = "下班时间"
 
-    weekday_sx_dict = {"星期一":"K","星期二":"O","星期三":"S","星期四":"W","星期五":"AA","星期六":"AE","星期天":"AI"}
+    weekday_sx_dict = {"星期三":"L","星期四":"N","星期五":"P","星期六":"R","星期天":"T","星期一":"V","星期二":"X"}
     #往右加一列
-    weekday_sx_dict2 = {"星期一":"L","星期二":"P","星期三":"T","星期四":"X","星期五":"AB","星期六":"AF","星期天":"AJ"}
+    weekday_sx_dict2 = {"星期三":"M","星期四":"O","星期五":"Q","星期六":"S","星期天":"U","星期一":"W","星期二":"Y"}
     #导购员ID_list
     id_sx_list =[]
 
-    # D列为导购员ID，K列开始显示日期列
+    # E列为导购员ID，L列开始显示日期列
     for row in range(2, ws_our.max_row + 1):
     
         id_our = ws_our[f"{id_our_col}{row}"].value
@@ -79,25 +79,25 @@ def shihouxiugai(our_file=our_file,sxfile=sx_P):
         # recording = ""
 
         for row2 in range(3,ws_sx.max_row+1):
-            id_sx = ws_sx[f"D{row2}"].value
+            id_sx = ws_sx[f"E{row2}"].value#导购员ID列
             id_sx_list.append(id_sx)
             if id_sx == id_our:
                 column_time = weekday_sx_dict[get_week_day(our_start)]
                 column_time2 = weekday_sx_dict2[get_week_day(our_start)]
                 time_begin_str=ws_sx[f"{column_time}{row2}"].value
                 time_end_str = ws_sx[f"{column_time2}{row2}"].value
-                time_work_begin=str(date_our)[:11] +time_begin_str
-                time_work_end = str(date_our)[:11] +time_end_str
-                # print(time_work_begin)
+                time_work_begin=str(date_our)[:11] +str(time_begin_str)[:5]
+                time_work_end = str(date_our)[:11] +str(time_end_str)[:5]
+                # print(our_start, our_end, time_work_begin,time_work_end)
                 # # time_begin = datetime.datetime.combine(date_our, time_begin_str)
                 # # time_end = datetime.datetime.combine(date_our, time_end_str)
                 # time_begin = datetime.datetime.strptime(f"{time_work_begin}", "%Y-%m-%d %H:%M")
                 # time_end = datetime.datetime.strptime(f"{time_work_end}", "%Y-%m-%d %H:%M")
                 # # print(column_time)
-                if ws_sx[f"{column_time}{row2}"].value =="休假":
+                if ws_sx[f"{column_time}{row2}"].value  in ["休息" ,"病假","周休","调休","离职","事假","产假","闭店","婚假","休班","其他"]:
                     ws_our[f"AK{row}"].value = "提前修改排班表"
-                    ws_our[f"AL{row}"].value = "休假"
-                    ws_our[f"AM{row}"].value = "休假"
+                    ws_our[f"AL{row}"].value = ws_sx[f"{column_time}{row2}"].value
+                    ws_our[f"AM{row}"].value = ws_sx[f"{column_time}{row2}"].value
                 elif time_overlap1(our_start, our_end, datetime.datetime.strptime(f"{time_work_begin}", "%Y-%m-%d %H:%M")
                     , datetime.datetime.strptime(f"{time_work_end}", "%Y-%m-%d %H:%M")) == 1:
                     ws_our[f"AK{row}"].value = "提前修改排班表"
@@ -240,8 +240,8 @@ def teshushijian(our_file=our_file, sxfile=sx_F):
                     print("+++++", baobei)
     wb_our.save(our_file)
 
-backup()
+# backup()
 shihouxiugai()
-ligangbaobei()
-ligangxinxi()
-teshushijian()
+# ligangbaobei()
+# ligangxinxi()
+# teshushijian()
