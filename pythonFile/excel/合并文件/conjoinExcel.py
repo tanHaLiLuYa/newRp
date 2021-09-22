@@ -43,7 +43,7 @@ def merge_xlsx(path, filenames, sheet_num, output_filename):
     # 分次记录数据到data ，放入contentlist中
     for i in range(len(filenames)):
         data = []
-        read_xlsx = xlrd.open_workbook(path + "\\" + filenames[i])
+        read_xlsx = xlrd.open_workbook(path + "\\" + filenames[i],)
         sheet_num_data = read_xlsx.sheets()[sheet_num]  # 查看指定sheet_num的数据
         title = sheet_num_data.row_values(0)  # 表头
 

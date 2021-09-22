@@ -54,7 +54,7 @@ def otherValue(letter,r, num):
 print("loading......")
 fillStyle = PatternFill("solid", fgColor="E6B8B7")
 
-root_path = r"C:\Users\tpp\Desktop\临时"
+root_path = r"F:\oldComputer\work\2021年\09月\W38"
 
 
 os.chdir(root_path)
