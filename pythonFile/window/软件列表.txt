@@ -1,0 +1,109 @@
+360驱动大师
+ActiveState Komodo IDE 12.0.1
+Adobe Acrobat Reader DC - Chinese Simplified
+Adobe Audition 2020
+Adobe Audition CS6
+Adobe Premiere Pro CS6
+Adobe Refresh Manager
+BCL easyConverter SDK 5 Word
+Bandizip
+Bonjour
+Brother MFL-Pro Suite DCP-7080D
+Corel VideoStudio Pro Title Pack
+Everything 1.4.1.935 (x64)
+Everything 1.4.1.935 (x86)
+FormatFactory
+FreeMind
+Git version 2.24.1.2
+Google Chrome
+Google Update Helper
+Hotspot Shield 9.8.6
+IBM SPSS Statistics 22
+Java 8 Update 251
+Java Auto Updater
+Microsoft Edge
+Microsoft Edge Update
+Microsoft Lync Web App Plug-in
+Microsoft Office Professional Plus 2019 - zh-cn
+Microsoft Visual C++ 2005 Redistributable
+Microsoft Visual C++ 2005 Redistributable (x64)
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.17
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40660
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40660
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.40660
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40660
+Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.23.27820
+Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.23.27820
+Microsoft Visual C++ 2019 X64 Additional Runtime - 14.23.27820
+Microsoft Visual C++ 2019 X64 Minimum Runtime - 14.23.27820
+Microsoft Visual C++ 2019 X86 Additional Runtime - 14.23.27820
+Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.23.27820
+Microsoft_VC80_CRT_x86
+Microsoft_VC90_CRT_x86
+NVIDIA Ansel
+NVIDIA Display Container
+NVIDIA Display Container LS
+NVIDIA Display Session Container
+NVIDIA Display Watchdog Plugin
+NVIDIA Install Application
+NVIDIA 图形驱动程序 388.57
+NVIDIA 控制面板 388.57
+Notepad++ (32-bit x86)
+Office 16 Click-to-Run Extensibility Component
+Office 16 Click-to-Run Licensing Component
+Office 16 Click-to-Run Localization Component
+Oracle VM VirtualBox 6.1.0
+PuTTY release 0.73 (64-bit)
+Python 3.7.4 Add to Path (64-bit)
+Python 3.7.4 Core Interpreter (64-bit)
+Python 3.7.4 Development Libraries (64-bit)
+Python 3.7.4 Documentation (64-bit)
+Python 3.7.4 Executables (64-bit)
+Python 3.7.4 Standard Library (64-bit)
+Python 3.7.4 Tcl/Tk Support (64-bit)
+Python 3.7.4 Test Suite (64-bit)
+Python 3.7.4 Utility Scripts (64-bit)
+Python Launcher
+QQ拼音输入法6.4
+R for Windows 3.6.2
+RAPID Mode
+RStudio
+Realtek Card Reader
+Realtek High Definition Audio Driver
+SPlayer 4.8.2
+Samsung Magician
+Sublime Text 3
+TAP-Windows 9.21.2
+TunnelBear
+VMware Workstation
+Vulkan Run Time Libraries 1.0.61.0
+Windscribe
+Xshell 6
+bl
+hide.me VPN 3.3.1
+hide.me Wintun
+ph
+乐播投屏
+傲软投屏 V1.4.7.33
+印象笔记 v. 6.19.10
+微信
+搜狗五笔输入法 3.1正式版
+搜狗输入法 9.6正式版
+有道云笔记
+百度网盘
+腾讯会议
+视频编辑王 V1.5.9.15
+迅捷PDF转换器
