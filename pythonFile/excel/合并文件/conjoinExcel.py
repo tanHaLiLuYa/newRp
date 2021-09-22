@@ -82,4 +82,4 @@ def merge_xlsx(path, filenames, sheet_num, output_filename):
 path = r'F:\oldComputer\work\2021年\09月\W38\test'
 filenames = file_name(path)
 print(filenames)
-merge_xlsx(path, filenames, 0, "合并文件")  # 合并文件中第一个表的数据，输出到 output中
+merge_xlsx(path, filenames, 0, "合并文件")  # 合并文件中第一个表的数据，输出到 output中  test
